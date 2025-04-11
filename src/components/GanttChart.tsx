@@ -146,9 +146,10 @@ const GanttChart: React.FC<GanttChartProps> = ({ tasks, onTaskUpdate, onTaskSele
           label: "Tarefa", 
           tree: true, 
           width: 200,
-          template: (task: Task) => {
-            return `<div style="font-weight: 500;">${task.text}</div>`;
-          }
+      template: (task: Task) => {
+  return `<span style="font-weight: 500; margin-left: 10px;">${task.text}</span>`;
+}
+
         },
         { 
           name: "responsible", 
